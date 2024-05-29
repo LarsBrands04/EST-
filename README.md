@@ -5,3 +5,5 @@ The Arduino code provided is able when connected to the power, arduino and senso
 Another thing that can be noticed is that when the air flow value gets less then 20 L/min it is converted to a 0, this is hardcoded as it should not get to these values.
 
 Matlab
+
+The Matlab code continuously reads lines of data, split by commas into pressure and airflow values, which are then converted from strings to double precision numbers. These values are stored in arrays for later analysis. The code includes error handling to ensure the serial port is closed properly in case of any issues. Finally, the collected data could be saved to a file named sensor_data.mat for further processing or analysis. Also there is a small code commented below for plotting the data.
