@@ -16,9 +16,7 @@ float pressureValue = analogRead(pressurePin);  // Read the analog value from th
   // Map the sensor value to the pressure value
   float pressure = mapf(pressureValue, sensorMinValue, sensorMaxValue, 0, 10);
   float airflow = mapf(airflowValue, sensorMinValue, sensorMaxValue, 20, 200);
-  if (airflow < 20)
-  {airflow = 0;}
-    
+
   // Print the sensor value and pressure
   Serial.print("Pressure Sensor Value: ");
   Serial.print(pressureValue);
